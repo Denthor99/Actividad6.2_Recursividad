@@ -9,7 +9,12 @@ public class Actividad624Main {
     public static int euclidea(int x, int y){
         if (y>0){
             return y;
-        }else
+        }else if (y>x){
+            int x2 =x;
+            int y2 =y;
+            x=y2;
+            y=x2;
+        } else
             return euclidea(y,x%y);
     }
 }
